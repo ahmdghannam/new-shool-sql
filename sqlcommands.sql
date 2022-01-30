@@ -252,9 +252,9 @@ insert into teacher values('9528468134','Geography','f');
 
 # non edu
 
-insert into non_educationl_employees values('4550908451','Clean Worker');
-insert into non_educationl_employees values('8116518109','doctor');
-insert into non_educationl_employees values('1216594354','Social advisor');
-insert into non_educationl_employees values('1118584543','manager');
+#insert into non_educationl_employees values('4550908451','Clean Worker');
+#insert into non_educationl_employees values('8116518109','doctor');
+#insert into non_educationl_employees values('1216594354','Social advisor');
+#insert into non_educationl_employees values('1118584543','manager');
 
 
