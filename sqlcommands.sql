@@ -81,10 +81,11 @@ section_id char(5),
 primary key(teacher_id, course_id, section_id)
 );
 create table graduated_from(
-student_id char(10),
-class_level char(3),
+student_id char(10) not null,
+class_level char(3) not null,
 the_year number(4) not null,
 primary key(student_id, class_level,the_year));
+
 create table library_books(
 book_id char(5) primary key,
 title varchar(20) not null,
@@ -349,5 +350,6 @@ insert into course values ('21025','C11','Chemistry');
 #queries
 # 1 - to find the student name and his parent name (that he depends on)
 select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
-
-
+# 2 - to find the student that had taught in our schools on every class (including his last year in the school)
+select * from person join (select student_id from (select student_id,class_level from student union select student_id, class_level from graduated_from)
+group by student_id having count(class_level) = (select count(class_level) from class)) f on (person.person_id =f.student_id );
