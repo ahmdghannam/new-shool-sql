@@ -280,11 +280,11 @@ insert into class values('C10',2000);
 insert into class values('C11',2500);
 
  #course
-insert into course values ('21789','C7','math');
-insert into course values ('21456','C8','english');
-insert into course values ('21123','C9','Geography');
-insert into course values ('21963','C10','Chemistry');
-insert into course values ('21852','C11','physics');
+insert into course values ('21001','C7','math');
+insert into course values ('21002','C8','english');
+insert into course values ('21003','C9','Geography');
+insert into course values ('21004','C10','Chemistry');
+insert into course values ('21005','C11','physics');
 
 
 
