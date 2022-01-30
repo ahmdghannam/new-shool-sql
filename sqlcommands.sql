@@ -254,7 +254,7 @@ insert into teacher values('9528468134','Geography','f');
 
 insert into non_educationl_employees values('4550908451','clean worker');
 insert into non_educationl_employees values('8116518109','doctor');
-insert into non_educationl_employees values('1216594354','social ad');
+insert into non_educationl_employees values('1216594354','Social advisor');
 insert into non_educationl_employees values('1118584543','manager');
 
 
