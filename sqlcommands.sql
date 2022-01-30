@@ -209,15 +209,17 @@ alter table borrow add (constraint person_borrow foreign key(person_id) referenc
 
 /// inserted into school
 #insert into person values ('0123456789','ahmad','m','mostufa','m');
-insert into person values ('1112223333','mohammed','m','zyoud','m');
-insert into person values ('8458458454','ahmad','a','ghannam','m');
+insert into person values  ('1112223333','mohammed','m','zyoud','m');
+insert into person values  ('8458458454','ahmad','a','ghannam','m');
 #insert into person values ('9999999999','samer','r','far','m');
 #insert into person values ('5555444444','tawfiq','a','abo natshah','m');
-insert into person values ('2200220022','obada','i','yahya','m');
-insert into person values ('1122112211','omar','s','hantouli','m');
+insert into person values  ('2200220022','obada','i','yahya','m');
+insert into person values  ('1122112211','omar','s','hantouli','m');
 #insert into person values ('1118584543','mohammed','k','hamed','m');
-insert into person values ('8115182592','ziad','t','abo tankhyaa','m');
+insert into person values  ('8115182592','ziad','t','abo tankhyaa','m');
 #insert into person values ('4550908451','shadi','b','alqamar','m');
+insert into person values  ('3948439392','jafar','k','shawahni','m');
+
 
 
 insert into person values ('6667788900','roaa','n','jaoub','f');
@@ -231,7 +233,7 @@ insert into person values ('9851819094','zolaikhah','s','abo lafha','f');
 insert into person values ('8110894616','shereen','o','abo asbah','f');
 #insert into person values ('1216594354','malak','k','hamed','f');
 insert into person values ('8642859746','ahmad','m','zyoud','m');
-insert into person values ('7648319752','baraa','h','shawahni','f');
+insert into person values ('7648319752','baraa','j','shawahni','f');
 insert into person values ('1349761258','tareq','j','shawahni','m');
 insert into person values ('8526741396','sara','j','fares','f');
 /// 
@@ -245,9 +247,11 @@ insert into person values ('8526741396','sara','j','fares','f');
 #insert into employees values('4550908451',1500,'High school diploma',5);
 #insert into employees values('8116518109',6000,'m.d',20);
 #insert into employees values('1118584543',8000,'ba',30);
+#insert into employees values('3948439392',4000,'bs',15);
 ///
 # chemestry , physics , english, math, Geography, history ,biology
 insert into teacher values('5555444444','Chemistry','f');
+insert into teacher values('3948439392','Chemistry','p');
 insert into teacher values('9999999999','math','f');
 insert into teacher values('0123456789','physics','f');
 insert into teacher values('8484848484','english','p');
@@ -273,8 +277,9 @@ insert into student values('8526741396',0598669366,'54321','C7');
 
 
 
-
-
+# depends_on
+insert into depends_on values('1349761258','3948439392');
+insert into depends_on values('7648319752','3948439392');
 
 
 # non edu
@@ -341,6 +346,8 @@ insert into course values ('21025','C11','Chemistry');
 
 
 
-
+#queries
+# 1 - to find the student name and his parent name (that he depends on)
+select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
 
 
