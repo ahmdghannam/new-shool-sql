@@ -233,17 +233,22 @@ insert into person values ('8110894616','shereen','o','abo asbah','f');
 #insert into person values ('1216594354','malak','k','hamed','f');
 /// 
 ///inserted data
-insert into employees values('5555444444',5000,'bs',20);
-insert into employees values('9999999999',3000,'bs',15);
-insert into employees values('0123456789',6000,'bs',25);
-insert into employees values('8484848484',3000,'ba',12);
-insert into employees values('9528468134',5000,'bs',15);
-insert into employees values('1216594354',2500,'ba',10);
-insert into employees values('4550908451',1500,'High school diploma',5);
-insert into employees values('8116518109',6000,'m.d',20);
+#insert into employees values('5555444444',5000,'bs',20);
+#insert into employees values('9999999999',3000,'bs',15);
+#insert into employees values('0123456789',6000,'bs',25);
+#insert into employees values('8484848484',3000,'ba',12);
+#insert into employees values('9528468134',5000,'bs',15);
+#insert into employees values('1216594354',2500,'ba',10);
+#insert into employees values('4550908451',1500,'High school diploma',5);
+#insert into employees values('8116518109',6000,'m.d',20);
 insert into employees values('1118584543',8000,'ba',30);
 ///
+# chemestry , physics , english, math, Geography, history ,biology
+insert into teacher values('5555444444','Chemistry','f');
+insert into teacher values('9999999999','math','f');
+insert into teacher values('0123456789','physics','f');
+insert into teacher values('8484848484','english','p');
+insert into teacher values('9528468134','Geography','f');
 
-insert into teacher values('5555444444','Chemiestr')
 
 
