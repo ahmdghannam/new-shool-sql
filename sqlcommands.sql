@@ -250,5 +250,11 @@ insert into teacher values('0123456789','physics','f');
 insert into teacher values('8484848484','english','p');
 insert into teacher values('9528468134','Geography','f');
 
+# non edu
+
+insert into non_educationl_employees values('4550908451','clean worker');
+insert into non_educationl_employees values('8116518109','doctor');
+insert into non_educationl_employees values('1216594354','social ad');
+insert into non_educationl_employees values('1118584543','manager');
 
 
