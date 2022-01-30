@@ -82,7 +82,7 @@ primary key(teacher_id, course_id, section_id)
 );
 create table graduated_from(
 student_id char(10),
-class_level char(5),
+class_level char(3),
 the_year number(4) not null,
 primary key(student_id, class_level,the_year));
 create table library_books(
@@ -218,8 +218,8 @@ insert into person values  ('1122112211','omar','s','hantouli','m');
 #insert into person values ('1118584543','mohammed','k','hamed','m');
 insert into person values  ('8115182592','ziad','t','abo tankhyaa','m');
 #insert into person values ('4550908451','shadi','b','alqamar','m');
-insert into person values  ('3948439392','jafar','k','shawahni','m');
-
+#insert into person values ('3948439392','jafar','k','shawahni','m');
+insert into person values  ('3288348292','abed','i','yahya','m');
 
 
 insert into person values ('6667788900','roaa','n','jaoub','f');
@@ -273,7 +273,7 @@ insert into student values('8642859746',0598678269,'00369','C8');
 insert into student values('7648319752',0598648265,'54321','C7');
 insert into student values('1349761258',Null,'54321','C7');
 insert into student values('8526741396',0598669366,'54321','C7');
-
+insert into student values('3288348292',0593828293,'12345','C11');
 
 
 
