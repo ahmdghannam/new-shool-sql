@@ -295,7 +295,7 @@ insert into room values ('L2',14,'Lab');
 #section
 insert into section values ('12345','A1');
 insert into section values ('00147','A2');
-insert into section values ('00258','B1');
+insert into section values ('00258','B2');
 insert into section values ('00369','L1');
 insert into section values ('54321','L2');
 
