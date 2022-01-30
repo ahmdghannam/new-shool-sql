@@ -59,7 +59,7 @@ experiance_years integer );
 create table teacher(
 teacher_id char(10) primary key,
 major varchar(20) not null,
-F_P_time char check (F_P_time  in ('F','P'))
+F_P_time char check (F_P_time  in ('f','p'))
 
 );
 create table non_educationl_employees(
@@ -83,14 +83,14 @@ primary key(teacher_id, course_id, section_id)
 create table graduated_from(
 student_id char(10),
 class_level char(5),
-the_year year not null,
+the_year number(4) not null,
 primary key(student_id, class_level,the_year));
 create table library_books(
 book_id char(5) primary key,
 title varchar(20) not null,
 edition varchar(20) not null,
 author varchar(20) not null,
-is_borrowed bool not null);
+is_borrowed char not null check(is_borrowed in ('t','f')));
 
 -- moahmmed zyoud 
 
@@ -123,7 +123,7 @@ person_id char(5) not null,
 book_id char(5) not null,
 date_of_borrowing date not null,
 date_of_return date not null,
-is_it_returned bool not null,
+is_it_returned char not null check(is_it_returned in ('f','t')),
 primary key(borrow_id)
 );
 
@@ -186,6 +186,8 @@ teach_teacher foreign key (teacher_id) references teacher(teacher_id),
 constraint 
 teach_section foreign key (section_id) references section(section_id)
 );
+alter table teach add(constraint
+teach_course foreign key(course_id) references course(course_id));
 
 alter table graduated_from add (constraint 
 graduated_from_student foreign key (student_id) references student(student_id));
