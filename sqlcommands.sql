@@ -233,7 +233,7 @@ insert into person values ('9851819094','zolaikhah','s','abo lafha','f');
 insert into person values ('8110894616','shereen','o','abo asbah','f');
 #insert into person values ('1216594354','malak','k','hamed','f');
 insert into person values ('8642859746','ahmad','m','zyoud','m');
-insert into person values ('7648319752','baraa','h','shawahni','m');
+insert into person values ('7648319752','baraa','h','shawahni','f');
 insert into person values ('1349761258','tareq','j','shawahni','m');
 insert into person values ('8526741396','sara','j','fares','f');
 /// 
