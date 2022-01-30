@@ -70,7 +70,7 @@ create table student(
 student_id char(10) primary key,
 parent_phone char(10),
 section_id char(5) not null,
-class_level char(5) not null);
+class_level char(3) not null);
 
 -- omar hantouli
 
