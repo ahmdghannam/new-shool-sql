@@ -207,8 +207,43 @@ borrow_library_books foreign key (book_id) references library_books(book_id));
 insert into person values ('158452455','mohammed','m','zyoud','m');
 select * from person;
 
-insert into employees values('158452455',5000,'phd',55);
-insert into teacher values('158452455','computer engineering','F');
-insert into student values ('158452455','0592531240','11111','first');
-delete  from student where student_id = '158452455';
-select * from teacher;
+
+/// inserted into school
+#insert into person values ('0123456789','ahmad','m','mostufa','m');
+insert into person values ('1112223333','mohammed','m','zyoud','m');
+insert into person values ('8458458454','ahmad','a','ghannam','m');
+#insert into person values ('9999999999','samer','r','far','m');
+#insert into person values ('5555444444','tawfiq','a','abo natshah','m');
+insert into person values ('2200220022','obada','i','yahya','m');
+insert into person values ('1122112211','omar','s','hantouli','m');
+#insert into person values ('1118584543','mohammed','k','hamed','m');
+insert into person values ('8115182592','ziad','t','abo tankhyaa','m');
+#insert into person values ('4550908451','shadi','b','alqamar','m');
+
+
+insert into person values ('6667788900','roaa','n','jaoub','f');
+#insert into person values ('8484848484','suhad','z','abo alroub','f');
+insert into person values ('8383838383','sara','a','zalat','f');
+insert into person values ('3829359289','moneera','l','dwekat','f');
+#insert into person values ('9528468134','mariam','s','abo arra','f');
+insert into person values ('9557284280','hiba','j','jardon','f');
+#insert into person values ('8116518109','rahmah','h','khalid','f');
+insert into person values ('9851819094','zolaikhah','s','abo lafha','f');
+insert into person values ('8110894616','shereen','o','abo asbah','f');
+#insert into person values ('1216594354','malak','k','hamed','f');
+/// 
+///inserted data
+insert into employees values('5555444444',5000,'bs',20);
+insert into employees values('9999999999',3000,'bs',15);
+insert into employees values('0123456789',6000,'bs',25);
+insert into employees values('8484848484',3000,'ba',12);
+insert into employees values('9528468134',5000,'bs',15);
+insert into employees values('1216594354',2500,'ba',10);
+insert into employees values('4550908451',1500,'High school diploma',5);
+insert into employees values('8116518109',6000,'m.d',20);
+insert into employees values('1118584543',8000,'ba',30);
+///
+
+insert into teacher values('5555444444','Chemiestr')
+
+
