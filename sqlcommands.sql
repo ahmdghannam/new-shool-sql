@@ -343,7 +343,9 @@ insert into course values ('21023','C11','physics');
 insert into course values ('21024','C11','Geography');
 insert into course values ('21025','C11','Chemistry');
 
-
+# library_books
+insert into library_books values('00550','The Secret Garden','1st edition','Frances Hodgson','f');
+insert into library_books values('21345','Animal Farm','2st edition','George Orwell','f');
 
 
 
