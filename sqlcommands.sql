@@ -64,7 +64,7 @@ F_P_time char check (F_P_time  in ('f','p'))
 );
 create table non_educationl_employees(
 non_edu_id char(10) primary key,
-job_title varchar(10) check 
+job_title varchar(25) check 
 (job_title in ('doctor','Clean Worker','Social advisor','manager','IT proficient','cafeteria worker','secretaria','Librarian')));
 create table student(
 student_id char(10) primary key,
@@ -252,7 +252,7 @@ insert into teacher values('9528468134','Geography','f');
 
 # non edu
 
-insert into non_educationl_employees values('4550908451','clean worker');
+insert into non_educationl_employees values('4550908451','Clean Worker');
 insert into non_educationl_employees values('8116518109','doctor');
 insert into non_educationl_employees values('1216594354','Social advisor');
 insert into non_educationl_employees values('1118584543','manager');
