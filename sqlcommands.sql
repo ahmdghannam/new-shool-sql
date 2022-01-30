@@ -258,3 +258,37 @@ insert into teacher values('9528468134','Geography','f');
 #insert into non_educationl_employees values('1118584543','manager');
 
 
+#room
+insert into room values ('A1',5,'Lecture room');
+insert into room values ('A2',8,'Lecture room');
+insert into room values ('B2',6,'Lecture room');
+insert into room values ('L1',11,'Lab');
+insert into room values ('L2',14,'Lab');
+
+#section
+insert into section values ('12345','A1');
+insert into section values ('00147','A2');
+insert into section values ('00258','B1');
+insert into section values ('00369','L1');
+insert into section values ('54321','L2');
+
+#class
+insert into class values('L1',500);
+insert into class values('L2',1000);
+insert into class values('L3',1500);
+insert into class values('L4',2000);
+insert into class values('L5',2500);
+
+ #course
+insert into course values ('21789','L1','math');
+insert into course values ('21789','L2','english');
+insert into course values ('21789','L3','Geography');
+insert into course values ('21789','L4','Chemistry');
+insert into course values ('21789','L5','physics');
+
+
+
+
+
+
+
