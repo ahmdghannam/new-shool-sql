@@ -204,6 +204,7 @@ section_room foreign key (room_no) references room(room_no));
 alter table borrow add (constraint 
 borrow_library_books foreign key (book_id) references library_books(book_id));
 
+
 insert into person values ('158452455','mohammed','m','zyoud','m');
 select * from person;
 
@@ -309,6 +310,9 @@ insert into course values ('21022','C11','english');
 insert into course values ('21023','C11','physics');
 insert into course values ('21024','C11','Geography');
 insert into course values ('21025','C11','Chemistry');
+
+
+
 
 
 
