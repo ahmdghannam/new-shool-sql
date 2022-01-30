@@ -205,8 +205,6 @@ alter table borrow add (constraint
 borrow_library_books foreign key (book_id) references library_books(book_id));
 alter table borrow add (constraint person_borrow foreign key(person_id) references person(person_id));
 
-insert into person values ('158452455','mohammed','m','zyoud','m');
-select * from person;
 
 
 /// inserted into school
