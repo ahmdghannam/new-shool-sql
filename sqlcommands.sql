@@ -273,18 +273,18 @@ insert into section values ('00369','L1');
 insert into section values ('54321','L2');
 
 #class
-insert into class values('L7',500);
-insert into class values('L8',1000);
-insert into class values('L9',1500);
-insert into class values('L10',2000);
-insert into class values('L11',2500);
+insert into class values('C7',500);
+insert into class values('C8',1000);
+insert into class values('C9',1500);
+insert into class values('C10',2000);
+insert into class values('C11',2500);
 
  #course
-insert into course values ('21789','L1','math');
-insert into course values ('21789','L2','english');
-insert into course values ('21789','L3','Geography');
-insert into course values ('21789','L4','Chemistry');
-insert into course values ('21789','L5','physics');
+insert into course values ('21789','C7','math');
+insert into course values ('21456','C8','english');
+insert into course values ('21123','C9','Geography');
+insert into course values ('21963','C10','Chemistry');
+insert into course values ('21852','C11','physics');
 
 
 
