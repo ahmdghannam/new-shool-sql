@@ -254,21 +254,21 @@ insert into teacher values('8484848484','english','p');
 insert into teacher values('9528468134','Geography','f');
 
 #students
-insert into student values('1112223333',0598654268,'12345','C11')
-insert into student values('8458458454',0568945321,'12345','C11')
-insert into student values('2200220022',0594154568,'12345','C11')
-insert into student values('1122112211',Null,'00147','C10')
-insert into student values('8115182592',0599684262,'00147','C10')
-insert into student values('8383838383',0591234261,'00147','C10')
-insert into student values('3829359289',0598654260,'00258','C9')
-insert into student values('6667788900',Null,'00258','C9')
-insert into student values('9557284280',0598654264,'00258','C9')
-insert into student values('9851819094',Null,'00369','C8')
-insert into student values('8110894616',Null,'00369','C8')
-insert into student values('8642859746',0598678269,'00369','C8')
-insert into student values('7648319752',0598648265,'54321','C7')
-insert into student values('1349761258',Null,'54321','C7')
-insert into student values('8526741396',0598669366,'54321','C7')
+insert into student values('1112223333',0598654268,'12345','C11');
+insert into student values('8458458454',0568945321,'12345','C11');
+insert into student values('2200220022',0594154568,'12345','C11');
+insert into student values('1122112211',Null,'00147','C10');
+insert into student values('8115182592',0599684262,'00147','C10');
+insert into student values('8383838383',0591234261,'00147','C10');
+insert into student values('3829359289',0598654260,'00258','C9');
+insert into student values('6667788900',Null,'00258','C9');
+insert into student values('9557284280',0598654264,'00258','C9');
+insert into student values('9851819094',Null,'00369','C8');
+insert into student values('8110894616',Null,'00369','C8');
+insert into student values('8642859746',0598678269,'00369','C8');
+insert into student values('7648319752',0598648265,'54321','C7');
+insert into student values('1349761258',Null,'54321','C7');
+insert into student values('8526741396',0598669366,'54321','C7');
 
 
 
