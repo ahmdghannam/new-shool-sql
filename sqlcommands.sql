@@ -343,6 +343,15 @@ insert into course values ('21023','C11','physics');
 insert into course values ('21024','C11','Geography');
 insert into course values ('21025','C11','Chemistry');
 
+# teach
+insert into teach values('9999999999','21021','12345');
+insert into teach values('8484848484','21022','12345');
+insert into teach values('0123456789','21023','12345');
+insert into teach values('9528468134','21024','12345');
+insert into teach values('5555444444','21025','12345');
+
+
+
 # library_books
 insert into library_books values('00550','The Secret Garden','1st edition','Frances Hodgson','f');
 insert into library_books values('21345','Animal Farm','2st edition','George Orwell','f');
