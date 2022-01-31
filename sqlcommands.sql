@@ -120,7 +120,7 @@ primary key(room_no)
 );
 create table borrow(
 borrow_id char(5),
-person_id char(5) not null,
+person_id char(10) not null,
 book_id char(5) not null,
 date_of_borrowing date not null,
 date_of_return date not null,
@@ -346,12 +346,19 @@ insert into course values ('21025','C11','Chemistry');
 # library_books
 insert into library_books values('00550','The Secret Garden','1st edition','Frances Hodgson','f');
 insert into library_books values('21345','Animal Farm','2st edition','George Orwell','f');
+insert into library_books values('35533','Sphere','3st edition','Michael Crichton','t');
 
 
+# borrow 
+insert into borrow values('55232','2200220022','35533','10/AUG/2017','17/AUG/2017','t');
 
 #queries
 # 1 - to find the student name and his parent name (that he depends on)
 select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
+
 # 2 - to find the student that had taught in our schools on every class (including his last year in the school)
 select * from person join (select student_id from (select student_id,class_level from student union select student_id, class_level from graduated_from)
 group by student_id having count(class_level) = (select count(class_level) from class)) f on (person.person_id =f.student_id );
+
+# 3 - to find book that are not borrowed by using his title
+select * from library_books where title = '&book_name' and is_borrowed = 'f'
