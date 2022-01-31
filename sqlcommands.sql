@@ -13,9 +13,10 @@ prescription varchar(20)
 create table grades(
 student_id char(10),
 course_id char(5),
-final decimal(5,2),
-midterm decimal(5,2),
-quiz decimal(5,2),
+great_mark integer not null,
+final integer,
+midterm integer,
+quiz integer,
 primary key(student_id,course_id));
 
 CREATE TABLE absences(
@@ -98,7 +99,6 @@ create table course(
 course_id char(5),
 class_level char(3) not null,
 subject varchar(15) not null,
-great_mark integer,
 primary key(course_id)
 );
 create table class(
@@ -179,9 +179,7 @@ grades_student  foreign key (student_id) references student(student_id)
 alter table  grades add(constraint 
 grades_course  foreign key (course_id) references course(course_id)
 );
-alter table grades add constraint final_grade check(final <= 50);
-alter table grades add constraint midter_grade check(midterm <= 35);
-alter table grades add constraint quiz_grade check(quiz <= 15);
+
 -- omar constraints
  
 alter table teach add (constraint 
@@ -315,35 +313,35 @@ insert into class values('C7',500);
 #insert into class values('C11',2500);
 
  #course
-insert into course values ('21001','C7','math',100);
-insert into course values ('21002','C7','english',100);
-insert into course values ('21003','C7','Geography',100);
-insert into course values ('21004','C7','physics',100);
-insert into course values ('21005','C7','Chemistry',100);
+insert into course values ('21001','C7','math');
+insert into course values ('21002','C7','english');
+insert into course values ('21003','C7','Geography');
+insert into course values ('21004','C7','physics');
+insert into course values ('21005','C7','Chemistry');
 
-#insert into course values ('21006','C8','math',100);
-#insert into course values ('21007','C8','english',100);
-#insert into course values ('21008','C8','physics',100);
-#insert into course values ('21009','C8','Geography',100);
+#insert into course values ('21006','C8','math');
+#insert into course values ('21007','C8','english');
+#insert into course values ('21008','C8','physics');
+#insert into course values ('21009','C8','Geography');
 #insert into course values ('21010','C8','Chemistry');
 
-#insert into course values ('21011','C9','math',100);
-#insert into course values ('21012','C9','english',100);
-#insert into course values ('21013','C9','physics',100);
-#insert into course values ('21014','C9','Geography',100);
-#insert into course values ('21015','C9','Chemistry',100);
+#insert into course values ('21011','C9','math');
+#insert into course values ('21012','C9','english');
+#insert into course values ('21013','C9','physics');
+#insert into course values ('21014','C9','Geography');
+#insert into course values ('21015','C9','Chemistry');
 
-#insert into course values ('21016','C10','math',150);
-#insert into course values ('21017','C10','english',100);
-#insert into course values ('21018','C10','physics',100);
-#insert into course values ('21019','C10','Geography',100);
-#insert into course values ('21020','C10','Chemistry',100);
+#insert into course values ('21016','C10','math');
+#insert into course values ('21017','C10','english');
+#insert into course values ('21018','C10','physics');
+#insert into course values ('21019','C10','Geography');
+#insert into course values ('21020','C10','Chemistry');
 
-#insert into course values ('21021','C11','math',200);
-#insert into course values ('21022','C11','english',100);
-#insert into course values ('21023','C11','physics',150);
-#insert into course values ('21024','C11','Geography',100);
-#insert into course values ('21025','C11','Chemistry',100);
+#insert into course values ('21021','C11','math');
+#insert into course values ('21022','C11','english');
+#insert into course values ('21023','C11','physics');
+#insert into course values ('21024','C11','Geography');
+#insert into course values ('21025','C11','Chemistry');
 
 # teach
 #insert into teach values('9999999999','21021','12345');
@@ -376,6 +374,106 @@ insert into course values ('21005','C7','Chemistry',100);
 #insert into teach values('0123456789','21003','54321');
 #insert into teach values('9528468134','21004','54321');
 #insert into teach values('5555444444','21005','54321');
+...........................................................................................................................
+insert into grades values('1112223333','21021',45,30,10);
+insert into grades values('1112223333','21022',50,30,10);
+insert into grades values('1112223333','21023',25,30,15);
+insert into grades values('1112223333','21024',50,20,5);
+insert into grades values('1112223333','21025',35,23,10);
+
+insert into grades values('8458458454','21021',45,22,6);
+insert into grades values('8458458454','21022',50,30,7);
+insert into grades values('8458458454','21023',45,25,8);
+insert into grades values('8458458454','21024',40,20,9);
+insert into grades values('8458458454','21025',35,15,10);
+
+insert into grades values('2200220022','21021',30,22,1);
+insert into grades values('2200220022','21022',10,30,10);
+insert into grades values('2200220022','21023',41,25,10);
+insert into grades values('2200220022','21024',17,20,10);
+insert into grades values('2200220022','21025',23,15,6);
+
+insert into grades values('3288348292','21021',45,30,10);
+insert into grades values('3288348292','21022',50,30,10);
+insert into grades values('3288348292','21023',25,30,15);
+insert into grades values('3288348292','21024',50,20,5);
+insert into grades values('3288348292','21025',35,23,10);
+
+insert into grades values('1122112211','21016',30,22,1);
+insert into grades values('1122112211','21017',10,30,10);
+insert into grades values('1122112211','21018',41,25,10);
+insert into grades values('1122112211','21019',17,20,10);
+insert into grades values('1122112211','21020',23,15,6);
+
+insert into grades values('8115182592','21016',30,22,1);
+insert into grades values('8115182592','21017',10,30,10);
+insert into grades values('8115182592','21018',41,25,10);
+insert into grades values('8115182592','21019',17,20,10);
+insert into grades values('8115182592','21020',23,15,6);
+
+insert into grades values('8383838383','21016',30,22,1);
+insert into grades values('8383838383','21017',10,30,10);
+insert into grades values('8383838383','21018',41,25,10);
+insert into grades values('8383838383','21019',17,20,10);
+insert into grades values('8383838383','21020',23,15,6);
+
+insert into grades values('3829359289','21011',30,22,1);
+insert into grades values('3829359289','21012',30,22,1);
+insert into grades values('3829359289','21013',30,22,1);
+insert into grades values('3829359289','21014',30,22,1);
+insert into grades values('3829359289','21015',30,22,1);
+
+insert into grades values('6667788900','21011',30,22,1);
+insert into grades values('6667788900','21012',30,22,1);
+insert into grades values('6667788900','21013',30,22,1);
+insert into grades values('6667788900','21014',30,22,1);
+insert into grades values('6667788900','21015',30,22,1);
+
+insert into grades values('9557284280','21011',30,22,1);
+insert into grades values('9557284280','21012',30,22,1);
+insert into grades values('9557284280','21013',30,22,1);
+insert into grades values('9557284280','21014',30,22,1);
+insert into grades values('9557284280','21015',30,22,1);
+
+insert into grades values('9851819094','21006',30,22,1);
+insert into grades values('9851819094','21007',30,22,1);
+insert into grades values('9851819094','21008',30,22,1);
+insert into grades values('9851819094','21009',30,22,1);
+insert into grades values('9851819094','21010',30,22,1);
+
+insert into grades values('8110894616','21006',30,22,1);
+insert into grades values('8110894616','21007',30,22,1);
+insert into grades values('8110894616','21008',30,22,1);
+insert into grades values('8110894616','21009',30,22,1);
+insert into grades values('8110894616','21010',30,22,1);
+
+insert into grades values('8642859746','21006',30,22,1);
+insert into grades values('8642859746','21007',30,22,1);
+insert into grades values('8642859746','21008',30,22,1);
+insert into grades values('8642859746','21009',30,22,1);
+insert into grades values('8642859746','21010',30,22,1);
+
+insert into grades values('1349761258','21001',49,33,15);
+insert into grades values('1349761258','21002',45,30,10);
+insert into grades values('1349761258','21003',44,31,12);
+insert into grades values('1349761258','21004',42,33,14);
+insert into grades values('1349761258','21005',47,35,13);
+
+insert into grades values('7648319752','21001',49,33,15);
+insert into grades values('7648319752','21002',45,30,10);
+insert into grades values('7648319752','21003',44,31,12);
+insert into grades values('7648319752','21004',42,33,14);
+insert into grades values('7648319752','21005',47,35,13);
+
+insert into grades values('8526741396','21001',49,33,15);
+insert into grades values('8526741396','21002',45,30,10);
+insert into grades values('8526741396','21003',44,31,12);
+insert into grades values('8526741396','21004',42,33,14);
+insert into grades values('1349761258','21005',47,35,13);
+
+
+
+
 
 # library_books
 insert into library_books values('00550','The Secret Garden','1st edition','Frances Hodgson','f');
@@ -396,3 +494,6 @@ group by student_id having count(class_level) = (select count(class_level) from 
 
 # 3 - to find book that are not borrowed by using his title
 select * from library_books where title = '&book_name' and is_borrowed = 'f'
+
+
+
