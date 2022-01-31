@@ -489,8 +489,8 @@ insert into borrow values('55232','2200220022','35533','10/AUG/2017','17/AUG/201
 select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
 
 # 2 - to find the student that had taught in our schools on every class (including his last year in the school)
-select * from person join (select student_id from (select student_id,class_level from student union select student_id, class_level from graduated_from)
-group by student_id having count(class_level) = (select count(class_level) from class)) f on (person.person_id =f.student_id );
+select student_id from graduated_from group by student_id
+having count(class_level) = (select count(class_level) from class);
 
 # 3 - to find book that are not borrowed by using his title
 select * from library_books where title = '&book_name' and is_borrowed = 'f'
@@ -499,7 +499,7 @@ select * from library_books where title = '&book_name' and is_borrowed = 'f'
 select teacher_id from teacher minus select teacher_id from teach;
 # 5 - find student information which have abscences more than 4
 
-select person_id, first_name ||' '||minit|| ' '||last_name "Full Name" from person
+select person_id, first_name ||' '||minit|| ' '||last_name "Full Name", parent_phone from person join student on(person.person_id = student.student_id)
 where person_id in (select student_id from student s join absences d on(s.student_id=d.person_id) 
 group by s.student_id 
 having count(d.absence_id) >= 4);
