@@ -497,5 +497,9 @@ select * from library_books where title = '&book_name' and is_borrowed = 'f'
 
 # 4 - find the teachers that are not any section
 select teacher_id from teacher minus select teacher_id from teach;
+# 5 - find student information which have abscences more than 4
 
-
+select person_id, first_name ||' '||minit|| ' '||last_name "Full Name" from person
+where person_id in (select student_id from student s join absences d on(s.student_id=d.person_id) 
+group by s.student_id 
+having count(d.absence_id) >= 4);
