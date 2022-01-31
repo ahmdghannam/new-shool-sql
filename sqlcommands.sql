@@ -26,8 +26,8 @@ absence_date DATE not null,
 cause VARCHAR(20) 
 
 );
-CREATE TABLE punchments(
-punchment_id CHAR(10) PRIMARY KEY,
+CREATE TABLE punishments(
+punishment_id CHAR(10) PRIMARY KEY,
 person_id CHAR(10) not null,
 punchment_date DATE not null,
 cause VARCHAR(20) not null
@@ -495,5 +495,7 @@ group by student_id having count(class_level) = (select count(class_level) from 
 # 3 - to find book that are not borrowed by using his title
 select * from library_books where title = '&book_name' and is_borrowed = 'f'
 
+# 4 - find the teachers that are not any section
+select teacher_id from teacher minus select teacher_id from teach;
 
 
