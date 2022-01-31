@@ -12,7 +12,7 @@ prescription varchar(20)
 );
 CREATE TABLE grades(
 student_id CHAR(10) not null,
-course_id CHAR(10) not null,
+course_id CHAR(5) not null,
 grade INTEGER not null,
 great_mark INTEGER not null,
 min_grade INTEGER not null
