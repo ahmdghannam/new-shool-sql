@@ -469,7 +469,7 @@ insert into grades values('8526741396','21001',50,33,15);
 insert into grades values('8526741396','21002',30,30,10);
 insert into grades values('8526741396','21003',33.5,31,12.5);
 insert into grades values('8526741396','21004',42.5,32,14.5);
-insert into grades values('1349761258','21005',47.5,33,13.5);
+insert into grades values('8526741396','21005',47.5,33,13.5);
 
 
 
