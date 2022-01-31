@@ -179,7 +179,9 @@ grades_student  foreign key (student_id) references student(student_id)
 alter table  grades add(constraint 
 grades_course  foreign key (course_id) references course(course_id)
 );
-
+alter table grades add constraint final_grade check(final <= 50);
+alter table grades add constraint midter_grade check(midterm <= 35);
+alter table grades add constraint quiz_grade check(quiz <= 15);
 -- omar constraints
  
 alter table teach add (constraint 
