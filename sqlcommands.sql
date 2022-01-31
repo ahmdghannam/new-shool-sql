@@ -27,7 +27,7 @@ cause VARCHAR(20)
 
 );
 CREATE TABLE punishments(
-punishment_id CHAR(10) PRIMARY KEY,
+punishment_id VARCAHR2(5) PRIMARY KEY,
 person_id CHAR(10) not null,
 punchment_date DATE not null,
 cause VARCHAR(20) not null
