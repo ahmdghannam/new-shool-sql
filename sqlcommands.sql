@@ -10,15 +10,15 @@ visit_date date not null,
 prescription varchar(20)
 
 );
-CREATE TABLE grades(
-student_id CHAR(10) not null,
-course_id CHAR(5) not null,
-grade INTEGER not null,
-great_mark INTEGER not null,
-min_grade INTEGER not null
+create table grades(
+student_id char(10),
+course_id char(5),
+great_mark integer not null,
+final integer,
+midterm integer,
+quiz integer,
+primary key(student_id,course_id));
 
-,PRIMARY KEY(student_id,course_id)
-);
 CREATE TABLE absences(
 absence_id CHAR(10) PRIMARY KEY,
 person_id CHAR(10) not null,
