@@ -382,78 +382,78 @@ insert into grades values('1112223333','21024',50,20,5);
 insert into grades values('1112223333','21025',35,23,10);
 
 insert into grades values('8458458454','21021',45,22,6);
-insert into grades values('8458458454','21022',50,30,7);
-insert into grades values('8458458454','21023',45,25,8);
-insert into grades values('8458458454','21024',40,20,9);
-insert into grades values('8458458454','21025',35,15,10);
+insert into grades values('8458458454','21022',43.5,12.5,7);
+insert into grades values('8458458454','21023',30.5,25,8);
+insert into grades values('8458458454','21024',46.5,20,10);
+insert into grades values('8458458454','21025',35,15,7);
 
-insert into grades values('2200220022','21021',30,22,1);
-insert into grades values('2200220022','21022',10,30,10);
+insert into grades values('2200220022','21021',10,11,4.5);
+insert into grades values('2200220022','21022',50,30,10);
 insert into grades values('2200220022','21023',41,25,10);
-insert into grades values('2200220022','21024',17,20,10);
-insert into grades values('2200220022','21025',23,15,6);
+insert into grades values('2200220022','21024',40.5,35,10);
+insert into grades values('2200220022','21025',11,15,6);
 
-insert into grades values('3288348292','21021',45,30,10);
-insert into grades values('3288348292','21022',50,30,10);
+insert into grades values('3288348292','21021',45,31.5,10);
+insert into grades values('3288348292','21022',45.5,30,10);
 insert into grades values('3288348292','21023',25,30,15);
 insert into grades values('3288348292','21024',50,20,5);
 insert into grades values('3288348292','21025',35,23,10);
 
 insert into grades values('1122112211','21016',30,22,1);
-insert into grades values('1122112211','21017',10,30,10);
-insert into grades values('1122112211','21018',41,25,10);
+insert into grades values('1122112211','21017',33.5,30,10);
+insert into grades values('1122112211','21018',41,25.5,10);
 insert into grades values('1122112211','21019',17,20,10);
 insert into grades values('1122112211','21020',23,15,6);
 
 insert into grades values('8115182592','21016',30,22,1);
-insert into grades values('8115182592','21017',10,30,10);
-insert into grades values('8115182592','21018',41,25,10);
-insert into grades values('8115182592','21019',17,20,10);
+insert into grades values('8115182592','21017',10.5,30,10);
+insert into grades values('8115182592','21018',41,25.5,10);
+insert into grades values('8115182592','21019',17.5,20,10);
 insert into grades values('8115182592','21020',23,15,6);
 
 insert into grades values('8383838383','21016',30,22,1);
-insert into grades values('8383838383','21017',10,30,10);
-insert into grades values('8383838383','21018',41,25,10);
-insert into grades values('8383838383','21019',17,20,10);
-insert into grades values('8383838383','21020',23,15,6);
+insert into grades values('8383838383','21017',11.5,30,10);
+insert into grades values('8383838383','21018',41.5,25.5,10);
+insert into grades values('8383838383','21019',17,20.5,10);
+insert into grades values('8383838383','21020',23.5,15,6.5);
 
-insert into grades values('3829359289','21011',30,22,1);
-insert into grades values('3829359289','21012',30,22,1);
-insert into grades values('3829359289','21013',30,22,1);
-insert into grades values('3829359289','21014',30,22,1);
-insert into grades values('3829359289','21015',30,22,1);
+insert into grades values('3829359289','21011',36.5,22,8.5);
+insert into grades values('3829359289','21012',30,22.5,6);
+insert into grades values('3829359289','21013',30,23.5,1);
+insert into grades values('3829359289','21014',30,26,6);
+insert into grades values('3829359289','21015',30.5,30,1);
 
-insert into grades values('6667788900','21011',30,22,1);
-insert into grades values('6667788900','21012',30,22,1);
-insert into grades values('6667788900','21013',30,22,1);
-insert into grades values('6667788900','21014',30,22,1);
-insert into grades values('6667788900','21015',30,22,1);
+insert into grades values('6667788900','21011',30.5,22,10);
+insert into grades values('6667788900','21012',30,23,9);
+insert into grades values('6667788900','21013',29,22,8);
+insert into grades values('6667788900','21014',30,21.5,7);
+insert into grades values('6667788900','21015',28,22,6);
 
-insert into grades values('9557284280','21011',30,22,1);
-insert into grades values('9557284280','21012',30,22,1);
-insert into grades values('9557284280','21013',30,22,1);
-insert into grades values('9557284280','21014',30,22,1);
-insert into grades values('9557284280','21015',30,22,1);
+insert into grades values('9557284280','21011',30,20,7.5);
+insert into grades values('9557284280','21012',24.5,21,8);
+insert into grades values('9557284280','21013',30,22,9.5);
+insert into grades values('9557284280','21014',29.5,23,10);
+insert into grades values('9557284280','21015',22,24,5.5);
 
-insert into grades values('9851819094','21006',30,22,1);
-insert into grades values('9851819094','21007',30,22,1);
-insert into grades values('9851819094','21008',30,22,1);
-insert into grades values('9851819094','21009',30,22,1);
-insert into grades values('9851819094','21010',30,22,1);
+insert into grades values('9851819094','21006',40,22,1);
+insert into grades values('9851819094','21007',45,22,1);
+insert into grades values('9851819094','21008',50,22,1);
+insert into grades values('9851819094','21009',45.5,22,1);
+insert into grades values('9851819094','21010',49.5,22,1);
 
-insert into grades values('8110894616','21006',30,22,1);
-insert into grades values('8110894616','21007',30,22,1);
-insert into grades values('8110894616','21008',30,22,1);
-insert into grades values('8110894616','21009',30,22,1);
-insert into grades values('8110894616','21010',30,22,1);
+insert into grades values('8110894616','21006',50,22,7);
+insert into grades values('8110894616','21007',45,22,8);
+insert into grades values('8110894616','21008',40,22,9);
+insert into grades values('8110894616','21009',30,22,10);
+insert into grades values('8110894616','21010',25,22,8.5);
 
-insert into grades values('8642859746','21006',30,22,1);
-insert into grades values('8642859746','21007',30,22,1);
-insert into grades values('8642859746','21008',30,22,1);
-insert into grades values('8642859746','21009',30,22,1);
-insert into grades values('8642859746','21010',30,22,1);
+insert into grades values('8642859746','21006',30,22,10);
+insert into grades values('8642859746','21007',40.5,22,6.5);
+insert into grades values('8642859746','21008',43.5,22,12.5);
+insert into grades values('8642859746','21009',45,22,5.5);
+insert into grades values('8642859746','21010',50,22,6);
 
-insert into grades values('1349761258','21001',49,33,15);
+insert into grades values('1349761258','21001',50,35,15);
 insert into grades values('1349761258','21002',45,30,10);
 insert into grades values('1349761258','21003',44,31,12);
 insert into grades values('1349761258','21004',42,33,14);
@@ -465,11 +465,11 @@ insert into grades values('7648319752','21003',44,31,12);
 insert into grades values('7648319752','21004',42,33,14);
 insert into grades values('7648319752','21005',47,35,13);
 
-insert into grades values('8526741396','21001',49,33,15);
-insert into grades values('8526741396','21002',45,30,10);
-insert into grades values('8526741396','21003',44,31,12);
-insert into grades values('8526741396','21004',42,33,14);
-insert into grades values('1349761258','21005',47,35,13);
+insert into grades values('8526741396','21001',50,33,15);
+insert into grades values('8526741396','21002',30,30,10);
+insert into grades values('8526741396','21003',33.5,31,12.5);
+insert into grades values('8526741396','21004',42.5,32,14.5);
+insert into grades values('1349761258','21005',47.5,33,13.5);
 
 
 
