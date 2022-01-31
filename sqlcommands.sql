@@ -299,18 +299,18 @@ insert into room values ('L1',11,'Lab');
 insert into room values ('L2',14,'Lab');
 
 #section
-insert into section values ('12345','A1');
-insert into section values ('00147','A2');
-insert into section values ('00258','B2');
-insert into section values ('00369','L1');
+#insert into section values ('12345','A1');
+#insert into section values ('00147','A2');
+#insert into section values ('00258','B2');
+#insert into section values ('00369','L1');
 insert into section values ('54321','L2');
 
 #class
 insert into class values('C7',500);
-insert into class values('C8',1000);
-insert into class values('C9',1500);
-insert into class values('C10',2000);
-insert into class values('C11',2500);
+#insert into class values('C8',1000);
+#insert into class values('C9',1500);
+#insert into class values('C10',2000);
+#insert into class values('C11',2500);
 
  #course
 insert into course values ('21001','C7','math');
@@ -319,38 +319,61 @@ insert into course values ('21003','C7','Geography');
 insert into course values ('21004','C7','physics');
 insert into course values ('21005','C7','Chemistry');
 
-insert into course values ('21006','C8','math');
-insert into course values ('21007','C8','english');
-insert into course values ('21008','C8','physics');
-insert into course values ('21009','C8','Geography');
-insert into course values ('21010','C8','Chemistry');
+#insert into course values ('21006','C8','math');
+#insert into course values ('21007','C8','english');
+#insert into course values ('21008','C8','physics');
+#insert into course values ('21009','C8','Geography');
+#insert into course values ('21010','C8','Chemistry');
 
-insert into course values ('21011','C9','math');
-insert into course values ('21012','C9','english');
-insert into course values ('21013','C9','physics');
-insert into course values ('21014','C9','Geography');
-insert into course values ('21015','C9','Chemistry');
+#insert into course values ('21011','C9','math');
+#insert into course values ('21012','C9','english');
+#insert into course values ('21013','C9','physics');
+#insert into course values ('21014','C9','Geography');
+#insert into course values ('21015','C9','Chemistry');
 
-insert into course values ('21016','C10','math');
-insert into course values ('21017','C10','english');
-insert into course values ('21018','C10','physics');
-insert into course values ('21019','C10','Geography');
-insert into course values ('21020','C10','Chemistry');
+#insert into course values ('21016','C10','math');
+#insert into course values ('21017','C10','english');
+#insert into course values ('21018','C10','physics');
+#insert into course values ('21019','C10','Geography');
+#insert into course values ('21020','C10','Chemistry');
 
-insert into course values ('21021','C11','math');
-insert into course values ('21022','C11','english');
-insert into course values ('21023','C11','physics');
-insert into course values ('21024','C11','Geography');
-insert into course values ('21025','C11','Chemistry');
+#insert into course values ('21021','C11','math');
+#insert into course values ('21022','C11','english');
+#insert into course values ('21023','C11','physics');
+#insert into course values ('21024','C11','Geography');
+#insert into course values ('21025','C11','Chemistry');
 
 # teach
-insert into teach values('9999999999','21021','12345');
-insert into teach values('8484848484','21022','12345');
-insert into teach values('0123456789','21023','12345');
-insert into teach values('9528468134','21024','12345');
-insert into teach values('5555444444','21025','12345');
+#insert into teach values('9999999999','21021','12345');
+#insert into teach values('8484848484','21022','12345');
+#insert into teach values('0123456789','21023','12345');
+#insert into teach values('9528468134','21024','12345');
+#insert into teach values('5555444444','21025','12345');
 
 
+#insert into teach values('9999999999','21016','00147');
+#insert into teach values('8484848484','21017','00147');
+#insert into teach values('0123456789','21018','00147');
+#insert into teach values('9528468134','21019','00147');
+#insert into teach values('3948439392','21020','00147');
+
+#insert into teach values('9999999999','21011','00258');
+#insert into teach values('8484848484','21012','00258');
+#insert into teach values('0123456789','21013','00258');
+#insert into teach values('9528468134','21014','00258');
+#insert into teach values('5555444444','21015','00258');
+
+#insert into teach values('9999999999','21006','00369');
+#insert into teach values('8484848484','21007','00369');
+#insert into teach values('0123456789','21008','00369');
+#insert into teach values('9528468134','21009','00369');
+#insert into teach values('3948439392','21010','00369');
+
+#insert into teach values('9999999999','21001','54321');
+#insert into teach values('8484848484','21002','54321');
+#insert into teach values('0123456789','21003','54321');
+#insert into teach values('9528468134','21004','54321');
+#insert into teach values('5555444444','21005','54321');
 
 # library_books
 insert into library_books values('00550','The Secret Garden','1st edition','Frances Hodgson','f');
