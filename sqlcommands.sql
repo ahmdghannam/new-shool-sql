@@ -99,6 +99,7 @@ create table course(
 course_id char(5),
 class_level char(3) not null,
 subject varchar(15) not null,
+great_mark integer,
 primary key(course_id)
 );
 create table class(
