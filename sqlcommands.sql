@@ -313,35 +313,35 @@ insert into class values('C7',500);
 #insert into class values('C11',2500);
 
  #course
-insert into course values ('21001','C7','math');
-insert into course values ('21002','C7','english');
-insert into course values ('21003','C7','Geography');
-insert into course values ('21004','C7','physics');
-insert into course values ('21005','C7','Chemistry');
+insert into course values ('21001','C7','math',100);
+insert into course values ('21002','C7','english',100);
+insert into course values ('21003','C7','Geography',100);
+insert into course values ('21004','C7','physics',100);
+insert into course values ('21005','C7','Chemistry',100);
 
-#insert into course values ('21006','C8','math');
-#insert into course values ('21007','C8','english');
-#insert into course values ('21008','C8','physics');
-#insert into course values ('21009','C8','Geography');
+#insert into course values ('21006','C8','math',100);
+#insert into course values ('21007','C8','english',100);
+#insert into course values ('21008','C8','physics',100);
+#insert into course values ('21009','C8','Geography',100);
 #insert into course values ('21010','C8','Chemistry');
 
-#insert into course values ('21011','C9','math');
-#insert into course values ('21012','C9','english');
-#insert into course values ('21013','C9','physics');
-#insert into course values ('21014','C9','Geography');
-#insert into course values ('21015','C9','Chemistry');
+#insert into course values ('21011','C9','math',100);
+#insert into course values ('21012','C9','english',100);
+#insert into course values ('21013','C9','physics',100);
+#insert into course values ('21014','C9','Geography',100);
+#insert into course values ('21015','C9','Chemistry',100);
 
-#insert into course values ('21016','C10','math');
-#insert into course values ('21017','C10','english');
-#insert into course values ('21018','C10','physics');
-#insert into course values ('21019','C10','Geography');
-#insert into course values ('21020','C10','Chemistry');
+#insert into course values ('21016','C10','math',150);
+#insert into course values ('21017','C10','english',100);
+#insert into course values ('21018','C10','physics',100);
+#insert into course values ('21019','C10','Geography',100);
+#insert into course values ('21020','C10','Chemistry',100);
 
-#insert into course values ('21021','C11','math');
-#insert into course values ('21022','C11','english');
-#insert into course values ('21023','C11','physics');
-#insert into course values ('21024','C11','Geography');
-#insert into course values ('21025','C11','Chemistry');
+#insert into course values ('21021','C11','math',200);
+#insert into course values ('21022','C11','english',100);
+#insert into course values ('21023','C11','physics',150);
+#insert into course values ('21024','C11','Geography',100);
+#insert into course values ('21025','C11','Chemistry',100);
 
 # teach
 #insert into teach values('9999999999','21021','12345');
