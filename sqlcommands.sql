@@ -13,7 +13,6 @@ prescription varchar(20)
 create table grades(
 student_id char(10),
 course_id char(5),
-great_mark integer not null,
 final integer,
 midterm integer,
 quiz integer,
