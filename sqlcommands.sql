@@ -485,21 +485,32 @@ insert into library_books values('35533','Sphere','3st edition','Michael Crichto
 insert into borrow values('55232','2200220022','35533','10/AUG/2017','17/AUG/2017','t');
 
 #queries
-# 1 - to find the student name and his parent name (that he depends on)
+finding the student name and his parent name (that he depends on)
 select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
 
-# 2 - to find the student that had taught in our schools on every class (including his last year in the school)
+to find the student that had taught in our schools on every class (including his last year in the school)
 select student_id from graduated_from group by student_id
 having count(class_level) = (select count(class_level) from class);
 
-# 3 - to find book that are not borrowed by using his title
+finding the book that are not borrowed by using his title
 select * from library_books where title = '&book_name' and is_borrowed = 'f'
 
-# 4 - find the teachers that are not any section
+finding the teachers that are not in any section
 select teacher_id from teacher minus select teacher_id from teach;
-# 5 - find student information which have abscences more than 4
+
+finding the student information which have abscences more than 4
 
 select person_id, first_name ||' '||minit|| ' '||last_name "Full Name", parent_phone from person join student on(person.person_id = student.student_id)
 where person_id in (select student_id from student s join absences d on(s.student_id=d.person_id) 
 group by s.student_id 
 having count(d.absence_id) >= 4);
+
+finding the grade for all student and for all courses
+
+select person_id, first_name ||' '||minit|| ' '||last_name "Full Name",class_level,section_id,subject, final + midterm + quiz "grades"
+from person join student on(person.person_id = student.student_id)
+join grades on(student.student_id = grades.student_id) join course on(grades.course_id = course.course_id)
+
+
+
+
