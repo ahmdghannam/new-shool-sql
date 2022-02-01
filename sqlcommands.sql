@@ -488,7 +488,7 @@ insert into borrow values('55232','2200220022','35533','10/AUG/2017','17/AUG/201
 finding the student name and his parent name (that he depends on)
 select s.first_name,f.first_name from depends_on d join person s on(d.student_id = s.person_id) join person f on(d.teacher_id = f.person_id);
 
-to find the student that had taught in our schools on every class (including his last year in the school)
+finding the student that had taught in our schools on every class (including his last year in the school)
 select student_id from graduated_from group by student_id
 having count(class_level) = (select count(class_level) from class);
 
@@ -507,7 +507,7 @@ having count(d.absence_id) >= 4);
 
 finding the grade for all student and for all courses
 
-select person_id, first_name ||' '||minit|| ' '||last_name "Full Name",class_level,section_id,subject, final + midterm + quiz "grades"
+select person_id, first_name ||' '||minit|| ' '||last_name "Full Name",class_level,section_id,subject, final + midterm + quiz "grade"
 from person join student on(person.person_id = student.student_id)
 join grades on(student.student_id = grades.student_id) join course on(grades.course_id = course.course_id)
 
